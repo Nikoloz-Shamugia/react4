@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css'
+import InfoSection from './components/InfoDiv'
 
 function App() {
+  const divStyle = {
+    backgroundColor: 'purple',
+    width: '100%',
+    height: '100vh',
+    display: 'grid',
+    placeItems: 'center',
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={divStyle}>
+      <InfoSection />
     </div>
   );
 }
 
 export default App;
+
